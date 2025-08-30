@@ -14,7 +14,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
         );
     }
 
-    // Identifica l'utente target
+    // Identifica l'utente targe
     let who = m.mentionedJid?.[0] || m.quoted?.sender || m.sender;
     let amount = parseInt(args[0]);
 
